@@ -46,4 +46,4 @@ Route::post('/page', [DemoController::class, 'ShowPage']);
 Route::post('/message', [DemoController::class, 'ShowMessage']);
 Route::post('/details', [DemoController::class, 'ShowDetails']);
 Route::post('/file', [DemoController::class, 'FileUpload']);
-// Route::post('/token', [DemoController::class, 'ShowToken']);
+Route::post('/token', [DemoController::class, 'Token']);
