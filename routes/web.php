@@ -47,3 +47,12 @@ Route::post('/message', [DemoController::class, 'ShowMessage']);
 Route::post('/details', [DemoController::class, 'ShowDetails']);
 Route::post('/file', [DemoController::class, 'FileUpload']);
 Route::post('/token', [DemoController::class, 'Token']);
+//Route::post('/submit', [DemoController::class, 'ShowEmail']);
+Route::post('/submit', function () {
+    $email = request('email');
+       return response()->json([
+        'success' => true,
+        'message' => 'Form submitted successfully.'
+    ]);
+});
+
