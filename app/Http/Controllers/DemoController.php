@@ -60,8 +60,10 @@ public function FileUpload(Request $request)
             // "newFileName"=> $newFileName,
              );
 }
-// public function ShowToken(Request $request)
-// {
-//     $remember_token = ($token = $request->)
-// }
+  public function Token(Request $request)
+    {
+       $rememberToken1= ($rememberToken = $request->cookie())? $rememberToken: 'null';
+       return $rememberToken1;
+
+    }
 }
