@@ -66,4 +66,13 @@ public function FileUpload(Request $request)
        return $rememberToken1;
 
     }
+    //  public function ShowEmail(Request $request)
+    // {
+    //    $email = $request->input('email');
+    //    return response()->json([
+    //     'success' => true,
+    //     'message' => 'Form submitted successfully.'
+    // ]);
+    // }
+
 }
